@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://fonts/20xSOR_Font.tres" type="DynamicFont" id=1]
+
+[node name="FileEditor" type="TextEdit"]
+margin_left = 351.0
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = ExtResource( 1 )
+highlight_current_line = true
+syntax_highlighting = true
+show_line_numbers = true
+draw_tabs = true
+minimap_draw = true
+minimap_width = 100
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,166 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://objects/MenuButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://objects/BaseTextLabel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://textures/GUI/buttons/util/door.png" type="Texture" id=3]
+[ext_resource path="res://textures/GUI/buttons/util/import.png" type="Texture" id=4]
+[ext_resource path="res://textures/GUI/buttons/util/gear.png" type="Texture" id=5]
+[ext_resource path="res://textures/GUI/buttons/util/save.png" type="Texture" id=6]
+[ext_resource path="res://textures/GUI/buttons/util/information.png" type="Texture" id=7]
+[ext_resource path="res://textures/GUI/buttons/util/musicOn.png" type="Texture" id=8]
+[ext_resource path="res://textures/GUI/buttons/util/languages.png" type="Texture" id=9]
+[ext_resource path="res://textures/GUI/buttons/util/plus.png" type="Texture" id=10]
+
+[node name="MainMenuButtons" type="Control"]
+margin_right = 210.0
+margin_bottom = 395.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NewProjectButton" parent="." instance=ExtResource( 1 )]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 200.0
+margin_bottom = 55.0
+
+[node name="NPB_Label" parent="NewProjectButton" instance=ExtResource( 2 )]
+light_mask = 0
+margin_left = 1.44302
+margin_top = 3.5368
+margin_right = 173.443
+margin_bottom = 44.5368
+text = "New Project"
+scroll_active = false
+
+[node name="plus" type="Sprite" parent="NewProjectButton"]
+light_mask = 0
+position = Vector2( 168.802, 21.6619 )
+texture = ExtResource( 10 )
+
+[node name="SaveOrojectButton" parent="." instance=ExtResource( 1 )]
+margin_left = 10.0
+margin_top = 66.0
+margin_right = 200.0
+margin_bottom = 111.0
+
+[node name="SPB_Label" parent="SaveOrojectButton" instance=ExtResource( 2 )]
+light_mask = 0
+margin_left = 1.44302
+margin_top = 3.5368
+margin_right = 173.443
+margin_bottom = 44.5368
+text = "Save Project"
+scroll_active = false
+
+[node name="save" type="Sprite" parent="SaveOrojectButton"]
+light_mask = 0
+position = Vector2( 175.543, 21.7669 )
+scale = Vector2( 0.753059, 0.932652 )
+texture = ExtResource( 6 )
+
+[node name="OpenProjectButton" parent="." instance=ExtResource( 1 )]
+margin_left = 10.0
+margin_top = 123.0
+margin_right = 200.0
+margin_bottom = 168.0
+
+[node name="OPB_Label" parent="OpenProjectButton" instance=ExtResource( 2 )]
+light_mask = 0
+margin_left = 1.55194
+margin_top = 3.70812
+margin_right = 169.552
+margin_bottom = 38.7081
+text = "Open Project"
+scroll_active = false
+
+[node name="import" type="Sprite" parent="OpenProjectButton"]
+light_mask = 0
+position = Vector2( 173.295, 26.908 )
+texture = ExtResource( 4 )
+
+[node name="SettingsButton" parent="." instance=ExtResource( 1 )]
+margin_left = 10.0
+margin_top = 178.0
+margin_right = 200.0
+margin_bottom = 223.0
+
+[node name="SB_Label" parent="SettingsButton" instance=ExtResource( 2 )]
+light_mask = 0
+margin_left = 45.8719
+margin_top = 8.10345
+margin_right = 152.871
+margin_bottom = 43.1034
+text = "Settings"
+scroll_active = false
+
+[node name="gear" type="Sprite" parent="SettingsButton"]
+light_mask = 0
+position = Vector2( 168.241, 19.9794 )
+texture = ExtResource( 5 )
+
+[node name="musicOn" type="Sprite" parent="SettingsButton"]
+light_mask = 0
+position = Vector2( 22.882, 20.5407 )
+texture = ExtResource( 8 )
+
+[node name="LangButton" parent="." instance=ExtResource( 1 )]
+margin_left = 10.0
+margin_top = 233.0
+margin_right = 200.0
+margin_bottom = 278.0
+
+[node name="LB_Label" parent="LangButton" instance=ExtResource( 2 )]
+light_mask = 0
+margin_left = 9.40491
+margin_top = 4.65221
+margin_right = 131.405
+margin_bottom = 39.6522
+text = "Language"
+scroll_active = false
+
+[node name="languages" type="Sprite" parent="LangButton"]
+light_mask = 0
+position = Vector2( 162.859, 22.4308 )
+scale = Vector2( 0.099978, 0.102566 )
+texture = ExtResource( 9 )
+
+[node name="ExitProgramButton" parent="." instance=ExtResource( 1 )]
+margin_left = 10.0
+margin_top = 289.0
+margin_right = 200.0
+margin_bottom = 334.0
+
+[node name="EPB_Label" parent="ExitProgramButton" instance=ExtResource( 2 )]
+light_mask = 0
+margin_left = 55.679
+margin_top = 5.42331
+margin_right = 110.68
+margin_bottom = 40.4233
+text = "Exit"
+scroll_active = false
+
+[node name="door" type="Sprite" parent="ExitProgramButton"]
+light_mask = 0
+position = Vector2( 137.934, 21.7869 )
+texture = ExtResource( 3 )
+
+[node name="ExitProgramButton2" parent="." instance=ExtResource( 1 )]
+margin_left = 10.0
+margin_top = 340.0
+margin_right = 200.0
+margin_bottom = 385.0
+
+[node name="EPB_Label" parent="ExitProgramButton2" instance=ExtResource( 2 )]
+light_mask = 0
+margin_left = 0.505058
+margin_top = 5.74915
+margin_right = 171.505
+margin_bottom = 40.7491
+text = "Help / credits"
+scroll_active = false
+
+[node name="information" type="Sprite" parent="ExitProgramButton2"]
+light_mask = 0
+position = Vector2( 180.568, 20.2686 )
+texture = ExtResource( 7 )

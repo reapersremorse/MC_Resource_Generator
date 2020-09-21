@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://textures/GUI/buttons/gray/grey_button00.png" type="Texture" id=4]
+[ext_resource path="res://textures/GUI/buttons/red/red_button00.png" type="Texture" id=5]
+[ext_resource path="res://textures/GUI/buttons/green/green_button00.png" type="Texture" id=6]
+[ext_resource path="res://textures/GUI/buttons/blue/blue_button00.png" type="Texture" id=7]
+[ext_resource path="res://textures/GUI/buttons/yellow/yellow_button00.png" type="Texture" id=8]
+
+[node name="BaseButton" type="TextureButton"]
+margin_right = 190.0
+margin_bottom = 45.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+texture_disabled = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
